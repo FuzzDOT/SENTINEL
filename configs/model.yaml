@@ -1,0 +1,23 @@
+# Global model/training defaults
+horizon: 5                 # forecast horizon (days ahead)
+lookback: 120              # window length for sequence model
+batch_size: 64
+epochs: 15
+lr: 0.001
+target: "return_1d"        # predict 1-day-ahead returns; horizon can roll in trainer
+features:
+  - "ta.sma_10"
+  - "ta.sma_20"
+  - "ta.rsi_14"
+  - "ta.macd"
+  - "ta.bbands"
+  - "returns_1d"
+  - "volatility_10d"
+strategy:
+  long_threshold: 0.001    # predicted return threshold to go long
+  short_threshold: -0.001  # predicted return threshold to go short
+  txn_cost_bps: 5          # round-trip cost (basis points)
+train:
+  test_size_days: 365
+  walk_forward_step_days: 30
+  min_train_days: 800

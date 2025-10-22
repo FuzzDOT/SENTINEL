@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+
+# Environment files
+.env
+.env.*
+
+# SQLite databases created during development / tests
+*.sqlite3
+*.db
+
+# Pytest cache
+.pytest_cache/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

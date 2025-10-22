@@ -1,0 +1,22 @@
+# Define categories and tickers/series. Extend as needed.
+stocks:
+  - AAPL
+  - MSFT
+  - NVDA
+
+etfs:
+  - SPY
+  - QQQ
+  - TLT   # long-term US treasuries ETF (proxy for bonds)
+  - IEF   # 7-10 Year Treasury ETF
+
+crypto:
+  - BTC-USD
+  - ETH-USD
+
+bonds_fred:  # optional FRED series (yields). If blank, bond ETFs above will be used.
+  - DGS10    # 10-Year Treasury Constant Maturity Rate (%)
+  - DGS2     # 2-Year Treasury Constant Maturity Rate (%)
+
+housing_fred:
+  - CSUSHPINSA  # S&P/Case-Shiller U.S. National Home Price Index
